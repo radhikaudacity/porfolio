@@ -7,11 +7,12 @@ const Home = () => {
       <section className='hero'>
         <div className='hero-content'>
           <h1>
-            I build <span>clean, reliable websites</span>
+            Frontend Developer Building <span>Scalable React Applications</span>
           </h1>
+
           <p>
-            Frontend developer specializing in React, JavaScript, and responsive
-            websites for small businesses and educators.
+            I develop responsive, performance-focused web applications using
+            React, component-based architecture, and real-world API integration.
           </p>
 
           <div className='hero-actions'>
@@ -28,10 +29,11 @@ const Home = () => {
           <div className='skill-card'>
             <h4>Core Skills</h4>
             <ul>
-              <li>React (Intermediate)</li>
+              <li>React</li>
               <li>JavaScript (ES6+)</li>
-              <li>HTML & CSS</li>
-              <li>Responsive Design</li>
+              <li>React Router</li>
+              <li>Form Handling & Validation</li>
+              <li>Responsive UI Architecture</li>
             </ul>
           </div>
         </div>
@@ -82,18 +84,18 @@ const Home = () => {
       </section>
 
       <section className='why-me'>
-        <h3>Why Work With Me</h3>
+        <h3>Professional Strengths</h3>
 
         <ul>
-          <li>Clear communication and practical approach</li>
-          <li>Focus on finishing projects cleanly</li>
-          <li>Comfortable working independently</li>
-          <li>Open to remote and flexible work (around 6 hours/day)</li>
+          <li>Structured, scalable component architecture</li>
+          <li>Clean, readable code with logical project organization</li>
+          <li>Strong debugging and problem-solving approach</li>
+          <li>Experience with production deployment workflows</li>
         </ul>
       </section>
 
       <section className='cta'>
-        <h3>Let’s Build Something Simple and Effective</h3>
+        <h3>Let’s Build Modern, Scalable Frontend Solutions</h3>
         <p>
           If you’re looking for a reliable front-end developer for your website
           or ongoing updates, I’d be happy to discuss your requirements.

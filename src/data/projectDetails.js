@@ -50,19 +50,21 @@ const projectDetails = [
     id: 2,
     title: 'Portfolio Website',
     description:
-      'A fully responsive personal portfolio built with React to showcase my projects, case studies, and frontend skills.',
+      'A fully responsive personal portfolio built with React to showcase projects through structured case studies while demonstrating scalable frontend architecture and real-world deployment practices.',
     image: portfolioImage,
     type: 'React',
     highlights: [
       'Clean, professional UI',
       'Responsive navigation',
       'Case-study driven project presentation',
+      'Conditional rendering (Thank You state)',
+      'Environment variable configuration',
     ],
     slug: 'portfolio',
     liveLink: 'https://portfolio-radhika-r.netlify.app/',
-    gitHubLink: '',
-    overview:
-      'A fully responsive personal portfolio designed to showcase React projects through structured, data-driven case studies.',
+    gitHubLink: 'https://github.com/radhikaudacity/porfolio',
+    description:
+      'A fully responsive personal portfolio built with React to showcase projects through structured, data-driven case studies while demonstrating scalable routing architecture and production deployment practices.',
 
     keyFeatures: [
       [
@@ -83,17 +85,25 @@ const projectDetails = [
       ],
       [
         'Semantic Markup',
-        'Implemented semantic HTML elements to improve accessibility and SEO.',
+        'Semantic HTML elements to improve accessibility and SEO.',
       ],
       [
         'Interactive UI',
         'Subtle hover states, spacing hierarchy, and visual rhythm to create a modern user experience.',
       ],
+      [
+        'Form Integration & Validation',
+        'Integrated Formspree for contact handling with client-side validation, error handling, and conditional success state rendering.',
+      ],
+      [
+        'Production Deployment',
+        'Configured environment variables and deployed via Netlify with optimized Vite production build for fast performance.',
+      ],
     ],
-    tech: ['React', 'React Router', 'CSS', 'Vite'],
+    tech: ['React', 'React Router', 'Vite', 'CSS', 'Formspree', 'Netlify'],
 
     outcome:
-      'Demonstrates scalable routing architecture, reusable components, and a data-driven case study system that allows seamless project expansion.',
+      'Demonstrates scalable component architecture, dynamic routing, API integration, and production-ready deployment in a real-world React application.',
   },
 
   {

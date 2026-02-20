@@ -35,13 +35,14 @@ const Projects = () => {
             </ul>
 
             <div className='project-links'>
-              <Link
-                to={project.liveLink}
+              <a
+                href={project.liveLink}
                 className='btn primary'
                 target='_blank'
+                rel='noopener noreferrer'
               >
                 Live Demo
-              </Link>
+              </a>
               <Link
                 to={`/case-study/${project.slug}`}
                 className='btn secondary'
@@ -49,9 +50,14 @@ const Projects = () => {
               >
                 Case Study
               </Link>
-              <Link to={project.gitHubLink} className='btn text'>
+              <a
+                href={project.gitHubLink}
+                className='btn text'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
                 View Code
-              </Link>
+              </a>
             </div>
           </div>
         </section>
