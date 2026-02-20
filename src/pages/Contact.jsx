@@ -1,27 +1,36 @@
 import { useState } from 'react';
 import ThankYou from './ThankYou';
+import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const form = e.currentTarget;
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
     const formData = new FormData(e.target);
 
-    const response = await fetch('https://formspree.io/f/xvzqweqq', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        Accept: 'aplication/json',
+    const response = await fetch(
+      `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`,
+      {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'aplication/json',
+        },
       },
-    });
+    );
+
     response.ok ? setSubmitted(true) : '';
   };
 
-  if (submitted) {
-    return <ThankYou />;
-  }
-  return (
+  return submitted ? (
+    <ThankYou />
+  ) : (
     <main>
       <section className='contact-hero'>
         <h1>Get in Touch</h1>
@@ -32,38 +41,7 @@ const Contact = () => {
       </section>
 
       <section className='contact-content'>
-        <div className='contact-form'>
-          <h2>Send a Message</h2>
-
-          <form onSubmit={handleSubmit}>
-            <label>
-              Name
-              <input type='text' placeholder='Your name' required />
-            </label>
-
-            <label>
-              Email
-              <input type='email' placeholder='Your email' required />
-            </label>
-
-            <label>
-              Message
-              <textarea
-                rows='5'
-                placeholder='Tell me a little about your requirement'
-                required
-              ></textarea>
-            </label>
-
-            <input type='hidden' name='_next' value='/thank-you' />
-            <input type='text' name='_gotcha' style={{ display: 'none' }} />
-            <button type='submit' className='btn primary'>
-              Send Message
-            </button>
-          </form>
-          <p className='form-note'>I usually respond within 24–48 hours.</p>
-        </div>
-
+        {<ContactForm handleSubmit={handleSubmit} />}
         <div className='contact-info'>
           <h2>Contact Details</h2>
 
