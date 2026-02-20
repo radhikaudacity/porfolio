@@ -1,4 +1,26 @@
+import { useState } from 'react';
+import ThankYou from './ThankYou';
+
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    const response = await fetch('https://formspree.io/f/xvzqweqq', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        Accept: 'aplication/json',
+      },
+    });
+    response.ok ? setSubmitted(true) : '';
+  };
+
+  if (submitted) {
+    return <ThankYou />;
+  }
   return (
     <main>
       <section className='contact-hero'>
@@ -10,11 +32,10 @@ const Contact = () => {
       </section>
 
       <section className='contact-content'>
-        {/* Contact Form */}
         <div className='contact-form'>
           <h2>Send a Message</h2>
 
-          <form action='https://formspree.io/f/xvzqweqq' method='POST'>
+          <form onSubmit={handleSubmit}>
             <label>
               Name
               <input type='text' placeholder='Your name' required />
@@ -35,18 +56,14 @@ const Contact = () => {
             </label>
 
             <input type='hidden' name='_next' value='/thank-you' />
-            {/* for spam protection */}
             <input type='text' name='_gotcha' style={{ display: 'none' }} />
-
             <button type='submit' className='btn primary'>
               Send Message
             </button>
           </form>
-
           <p className='form-note'>I usually respond within 24–48 hours.</p>
         </div>
 
-        {/* Contact Info */}
         <div className='contact-info'>
           <h2>Contact Details</h2>
 
