@@ -199,7 +199,6 @@ section {
   display: flex;
   gap: var(--space-3);
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .cta {
   text-align: center;
@@ -485,6 +484,10 @@ section {
     gap: var(--space-3);
     margin-bottom: var(--space-6);
   }
+  .what-i-do .features {
+    flex-wrap: wrap;
+  }
+
   .feature-item {
     grid-template-columns: 1fr;
   }
