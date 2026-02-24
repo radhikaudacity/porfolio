@@ -45,9 +45,9 @@ const Home = () => {
         </p>
 
         <a
-          href='/resume_radhika_frontend.pdf'
+          href='/Radhika_Raghunayakula.pdf'
           className='btn secondary'
-          download
+          target='_blank'
         >
           Download Resume (PDF)
         </a>
