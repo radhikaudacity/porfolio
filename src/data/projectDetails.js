@@ -4,7 +4,7 @@ import homeServicesImage from '../assets/home-services.webp';
 const projectDetails = [
   {
     id: 1,
-    title: 'Store Product Explorer (API Project)',
+    title: 'Store Product Listing',
     description: 'React app that fetches and filters data from a public API.',
     image: apiProjectImage,
     type: 'React + API',
@@ -15,8 +15,8 @@ const projectDetails = [
     ],
 
     slug: 'api-project',
-    liveLink: 'https://store-product-lister.netlify.app/',
-    gitHubLink: '',
+    liveLink: 'https://store-product-listing.netlify.app/',
+    gitHubLink: 'https://github.com/radhikaudacity/store-product-listing',
     overview:
       'React-based product explorer that utilizes a public REST API to display a catalog of items and manage client-side state.',
 
@@ -50,7 +50,7 @@ const projectDetails = [
     id: 2,
     title: 'Portfolio Website',
     description:
-      'A fully responsive personal portfolio built with React to showcase projects through structured case studies while demonstrating scalable frontend architecture and real-world deployment practices.',
+      'Portfolio website designed to present projects clearly with organized case studies and responsive layout.',
     image: portfolioImage,
     type: 'React',
     highlights: [
@@ -63,8 +63,8 @@ const projectDetails = [
     slug: 'portfolio',
     liveLink: 'https://portfolio-radhika-r.netlify.app/',
     gitHubLink: 'https://github.com/radhikaudacity/porfolio',
-    description:
-      'A fully responsive personal portfolio built with React to showcase projects through structured, data-driven case studies while demonstrating scalable routing architecture and production deployment practices.',
+    overview:
+      'A scalable portfolio platform designed to present projects through structured case studies, clear navigation, and conversion-focused layout. Built with reusable components and responsive architecture to ensure long-term maintainability.',
 
     keyFeatures: [
       [
@@ -108,9 +108,9 @@ const projectDetails = [
 
   {
     id: 3,
-    title: 'Concept Project',
+    title: 'Ananya Home Services - Business Website',
     description:
-      'Responsive website concept for a local home services business.',
+      'Modern home services website with service categorization, clear CTAs, and mobile-first responsive design.',
     image: homeServicesImage,
     type: 'React',
     highlights: [
@@ -121,9 +121,9 @@ const projectDetails = [
     ],
     slug: 'home-services',
     liveLink: 'https://ananya-home-services.netlify.app/',
-    gitHubLink: '',
+    gitHubLink: 'https://github.com/radhikaudacity/ananya-home-services',
     overview:
-      'A concept-based home services platform designed to simulate real-world client requirements such as service categorization, conversion-focused layout, and scalable frontend architecture.',
+      'A service-based business website designed to present offerings clearly and guide users toward inquiry actions. Built with scalable component architecture and a responsive layout to support future expansion.',
 
     keyFeatures: [
       [
