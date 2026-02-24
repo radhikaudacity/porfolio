@@ -289,6 +289,10 @@ section {
   grid-template-columns: 1fr 1.3fr;
   gap: var(--space-4);
   margin-bottom: var(--space-7);
+  background: linear-gradient(135deg, #f7f2fb, #ffffff);
+  padding: var(--space-2);
+  border: solid 1px var(--primary);
+  border-radius: 6px;
 }
 
 .project-image img {
