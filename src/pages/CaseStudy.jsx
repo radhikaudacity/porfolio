@@ -32,14 +32,17 @@ const CaseStudy = () => {
               >
                 Live Demo
               </Link>
-
-              <Link
-                to={caseStudy.gitHubLink}
-                className='btn secondary'
-                target='_blank'
-              >
-                View Code
-              </Link>
+              {caseStudy.gitHubLink ? (
+                <Link
+                  to={caseStudy.gitHubLink}
+                  className='btn secondary'
+                  target='_blank'
+                >
+                  View Code
+                </Link>
+              ) : (
+                ''
+              )}
             </div>
           </div>
           <div className='back-to-project'>

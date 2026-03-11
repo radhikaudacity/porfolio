@@ -1,11 +1,15 @@
 import apiProjectImage from '../assets/api-project.webp';
 import portfolioImage from '../assets/portfolio.webp';
 import homeServicesImage from '../assets/home-services.webp';
+import urbanGlowImage from '../assets/urban-glow.webp';
+import chosenImage from '../assets/chosen.webp';
+
 const projectDetails = [
   {
     id: 1,
-    title: 'Store Product Listing',
-    description: 'React app that fetches and filters data from a public API.',
+    title: 'Product Listing Web Application',
+    description:
+      'A responsive interface that displays products retrieved from an API, designed to simulate an e-commerce catalog.',
     image: apiProjectImage,
     type: 'React + API',
     highlights: [
@@ -47,7 +51,7 @@ const projectDetails = [
       'Demonstrates practical API integration, state-driven rendering, client-side persistence, and resilient UI handling.',
   },
   {
-    id: 2,
+    id: 5,
     title: 'Portfolio Website',
     description:
       'Portfolio website designed to present projects clearly with organized case studies and responsive layout.',
@@ -103,7 +107,7 @@ const projectDetails = [
     tech: ['React', 'React Router', 'Vite', 'CSS', 'Formspree', 'Netlify'],
 
     outcome:
-      'Demonstrates scalable component architecture, dynamic routing, API integration, and production-ready deployment in a real-world React application.',
+      'Demonstrates scalable component architecture, dynamic routing, and production-ready deployment in a real-world React application.',
   },
 
   {
@@ -155,6 +159,101 @@ const projectDetails = [
     tech: ['React', 'HTML', 'CSS', 'Vite'],
     outcome:
       'Demonstrates client-oriented UI design, reusable component architecture, and scalable frontend foundations suitable for real-world service platforms.',
+  },
+
+  {
+    id: 4,
+    title: 'Urban Glow Jewelry– Product Catalog UI',
+    description:
+      'A responsive product catalog designed for a jewelry brand with an Instagram-first audience, presenting products in a clean and mobile-friendly layout.',
+    image: urbanGlowImage,
+    type: 'React UI',
+    highlights: [
+      'Product grid layout',
+      'Reusable product card components',
+      'Clean visual hierarchy',
+      'Responsive design',
+    ],
+
+    slug: 'urban-glow',
+    liveLink: 'https://urban-glow-jewelry.netlify.app/',
+    gitHubLink: 'https://github.com/radhikaudacity/urban-glow-jewelry',
+
+    overview:
+      'Frontend product catalog designed for a jewelry brand that attracts customers primarily through Instagram. The goal of the website is to provide a clear and visually organized catalog where social media visitors can quickly browse products and understand the brand’s offerings. The interface focuses on clean product presentation, reusable component structure, and a responsive grid layout to ensure a smooth browsing experience across devices.',
+
+    keyFeatures: [
+      [
+        'Product Grid Layout',
+        'Implemented a flexible CSS Grid layout to present product cards in a clean and visually balanced catalog.',
+      ],
+      [
+        'Reusable Components',
+        'Designed modular product card components to support scalable product listings.',
+      ],
+      [
+        'Responsive Design',
+        'Layout adapts smoothly across desktop, tablet, and mobile devices.',
+      ],
+      [
+        'Visual Hierarchy',
+        'Typography, spacing, and image scaling designed to guide user attention through product details.',
+      ],
+    ],
+
+    tech: ['React', 'JavaScript (ES6)', 'CSS', 'Vite'],
+
+    outcome:
+      'Demonstrates strong frontend UI development, component-based architecture, and responsive layout design.',
+  },
+  {
+    id: 2,
+    title: 'Chosen – Shopify Storefront Enhancements',
+    description:
+      'Frontend contributions to an existing Shopify store, including development of new content pages and interactive features.',
+
+    image: chosenImage,
+
+    type: 'Client Project',
+
+    highlights: [
+      'Two new storefront pages',
+      'React interactive feature',
+      'Shopify theme integration',
+      'Responsive UI updates',
+    ],
+
+    slug: 'chosen',
+
+    liveLink: 'https://chosenstore.in/blogs/ingredients',
+    gitHubLink: null,
+
+    overview:
+      'Contributed frontend enhancements to an existing Shopify storefront. Developed additional content pages and previously implemented a React-based interactive feature while maintaining visual consistency with the existing theme.',
+
+    keyFeatures: [
+      [
+        'Custom Page Development',
+        'Built two new content pages integrated within the Shopify storefront while preserving existing layout structure.',
+      ],
+      [
+        'Interactive React Feature',
+        'Developed a React-based interactive game component that was later removed during subsequent website updates.',
+      ],
+      [
+        'Shopify Theme Integration',
+        'Ensured newly developed pages aligned with the existing Shopify theme styling and structure.',
+      ],
+      [
+        'Responsive Layout',
+        'Implemented mobile-friendly layout adjustments to ensure consistent presentation across devices.',
+      ],
+    ],
+
+    tech: ['React', 'JavaScript', 'Shopify', 'CSS'],
+
+    outcome:
+      'Demonstrates ability to work within an existing production website, extend Shopify storefront functionality, and maintain design consistency while developing new features.',
   },
 ];
 export default projectDetails;
