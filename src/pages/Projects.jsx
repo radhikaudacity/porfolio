@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import projectDetails from '../data/projectDetails.js';
 const Projects = () => {
+  const sortedProjectDetails = projectDetails.sort((a, b) => a.id - b.id);
   return (
     <main>
       <section className='projects-hero'>
@@ -11,7 +12,7 @@ const Projects = () => {
         </p>
       </section>
 
-      {projectDetails.map((project, index) => (
+      {sortedProjectDetails.map((project, index) => (
         <section key={index} className='project-card'>
           <div className='project-image'>
             <a
@@ -50,14 +51,18 @@ const Projects = () => {
               >
                 Case Study
               </Link>
-              <a
-                href={project.gitHubLink}
-                className='btn text'
-                rel='noopener noreferrer'
-                target='_blank'
-              >
-                View Code
-              </a>
+              {project.gitHubLink ? (
+                <a
+                  href={project.gitHubLink}
+                  className='btn text'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  View Code
+                </a>
+              ) : (
+                ''
+              )}
             </div>
           </div>
         </section>
