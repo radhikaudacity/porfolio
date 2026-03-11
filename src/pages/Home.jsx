@@ -6,15 +6,13 @@ const Home = () => {
     <main className='home'>
       <section className='hero'>
         <div className='hero-content'>
-          <h1>
-            Frontend Developer Building <span>Scalable React Applications</span>
-          </h1>
+          <h1>Frontend Developer</h1>
 
           <p>
-            I develop responsive, performance-focused web applications using
-            React, component-based architecture, and real-world API integration.
+            I build clean, responsive web interfaces and interactive web
+            applications.
           </p>
-
+          <p>Available for remote and contract frontend opportunities.</p>
           <div className='hero-actions'>
             <Link to='/projects' className='btn primary'>
               View Projects
@@ -34,6 +32,8 @@ const Home = () => {
               <li>React Router</li>
               <li>Form Handling & Validation</li>
               <li>Responsive UI Architecture</li>
+              <li>REST API Integration</li>
+              <li>Git /Version Control</li>
             </ul>
           </div>
         </div>
@@ -54,30 +54,29 @@ const Home = () => {
       </section>
 
       <section className='what-i-do'>
-        <h3>What I Do</h3>
+        <h3>Services</h3>
 
         <div className='features'>
           <div className='feature-card'>
-            <h4>Responsive Websites</h4>
+            <h4>Website Development</h4>
             <p>
-              Websites that look good and work smoothly on desktop, tablet, and
-              mobile devices.
+              Building responsive websites using modern frontend technologies.
             </p>
           </div>
 
           <div className='feature-card'>
-            <h4>React Development</h4>
+            <h4>UI Improvements</h4>
             <p>
-              Component-based development using React and React Router for clean
-              structure and scalability.
+              Improving existing websites by fixing layout, responsiveness, and
+              UI issues.
             </p>
           </div>
 
           <div className='feature-card'>
-            <h4>Website Improvements</h4>
+            <h4>Frontend Features</h4>
             <p>
-              Improving layout, styling, responsiveness, and usability of
-              existing websites.
+              Adding new UI components or integrating APIs into existing web
+              applications.
             </p>
           </div>
         </div>
