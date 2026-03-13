@@ -9,8 +9,8 @@ const Home = () => {
           <h1>Frontend Developer</h1>
 
           <p>
-            I build clean, responsive web interfaces and interactive web
-            applications.
+            Specializing in <span>React UI development </span>and{' '}
+            <span>responsive web interfaces</span>.
           </p>
           <p>Available for remote and contract frontend opportunities.</p>
           <div className='hero-actions'>
@@ -33,7 +33,7 @@ const Home = () => {
               <li>Form Handling & Validation</li>
               <li>Responsive UI Architecture</li>
               <li>REST API Integration</li>
-              <li>Git /Version Control</li>
+              <li>Git / Version Control</li>
             </ul>
           </div>
         </div>

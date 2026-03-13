@@ -167,8 +167,9 @@ section {
   align-items: center;
 }
 
-.hero h1 span {
+.hero p span {
   color: var(--primary);
+  font-weight: 600;
 }
 
 .hero-actions {
