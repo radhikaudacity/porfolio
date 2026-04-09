@@ -49,7 +49,7 @@ const Home = () => {
           className='btn secondary'
           target='_blank'
         >
-          Download Resume (PDF)
+          View Resume (PDF)
         </a>
       </section>
 
